@@ -1,11 +1,8 @@
-def sexDissection(num):
-    num = ""
-    if num[0] == "1":
-        return "Your man"
-    elif num[0] == "2":
-        print("Your woman")
+def check_gender(pin):
+    num = pin.split("-")[1][:1]
+    if int(num) % 2 == 0:
+        print("your girl")
     else:
-        print("Your gender")
+        print("your boy")
 
-sexDissection("1852220")
-
+check_gender("980304-2852220")
